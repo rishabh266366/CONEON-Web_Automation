@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
         loginPage.enterMobile("9876543210");
         loginPage.clickSendOtp();
 
-        // wait for redirect
+        // wait for redirecting
         loginPage.waitForOtpPage();
 
         String currentUrl = driver.getCurrentUrl();
